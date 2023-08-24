@@ -5,12 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loops</title>
     <style>
-
+        .container{
+            max-width: 400px;
+            display: block;
+            margin: 9rem auto;
+            padding: 0 4rem;
+        }
+        button{
+            display: block;
+            margin: 1rem auto;
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 5px 12px;
+            border-radius: 8px 0 8px 0;
+        }
     </style>
 </head>
 <body>
-    <p>Enter the Number: <input id="num"><button onclick="checkPrime()">Check</button></p>
-    <p id="resPara" style="display:none;">It is <span id="res"></span> Number</p>
+    <div class="container">
+        <p>Enter the Number: <input id="num">
+            <button onclick="checkPrime()">Check</button>
+        </p>
+        <p id="resPara" style="display:none;">It is <span id="res"></span> Number</p>
+    </div>
+    
+
     <script>
         // A program that asks the user to enter a number to check and print whether the number entered is a prime number or not.
         var num, i, chk, temp;
